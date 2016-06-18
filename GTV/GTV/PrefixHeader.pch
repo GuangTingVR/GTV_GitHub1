@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  GTV
+//
+//  Created by 梁艳广 on 16/5/29.
+//  Copyright © 2016年 guangting. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+#define SURE_ALERT(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show]
+#define UDS [NSUserDefaults standardUserDefaults]
+#define USER_NAME @"USER_NAME"  //账号信息
+#define TIME_FLAG 1 			//时间阀值
+#define INPUT_FLAG @"input"     //透传消息关键字
+#define END_FLAG @"end_input"   //结束透传
+
+//网址
+#import "ApiHeader.h"
+
+//三方库
+//导入该头文件可以获取到创建的容器控制器
+#import "MMDrawerController.h"
+#import "UIViewController+MMDrawerController.h"
+#import "SCNavTabBarController.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "MJRefresh.h"
+#import "MMProgressHUD.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "DatabaseManager.h"
+#import "FMDatabase.h"
+
+//自建类
+#import "MainTabBarViewController.h"
+#import "HttpRequest.h"
+
+//自建View
+//自建Cell
+
+
+//工具
+#import "NSString+URLEncoding.h"
+#import "FactoryClass.h"
+#endif /* PrefixHeader_pch */
